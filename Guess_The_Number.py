@@ -15,6 +15,8 @@ def guessing_number():
 
     computer_number = random.randint(0,100)
 
+    ask_user_ready_or_not = input("Ready? Type y if yes and n if not. ").lower()
+
 
 
 
