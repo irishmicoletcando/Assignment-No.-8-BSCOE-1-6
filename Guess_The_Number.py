@@ -13,6 +13,8 @@ def guessing_number():
     If your guess is greater than the computer generated number, the program will display 'Greater than'. \n
     If your guess is less than the computer generated number, the program will display 'Less than'. \n""")
 
+    computer_number = random.randint(0,100)
+
 
 
 
