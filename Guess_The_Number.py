@@ -20,13 +20,14 @@ def guessing_number():
     if ask_user_ready_or_not == "y":
         while True:
             user_number = int(input("Your guess: "))
-
+            if user_number > computer_number:
+                print("Your guess is greater than the computer-generated number. Try again!")
+            elif user_number == computer_number:
+                print(f"You got it! \n The computer generated number is {computer_number}.")
+            else:
+                print("Your guess is less than the computer-generated number. Try again!")
     else:
         print("Please restart the game.")
-
-
-
-
 
 
 guessing_number()
