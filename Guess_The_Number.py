@@ -18,7 +18,8 @@ def guessing_number():
     ask_user_ready_or_not = input("Ready? Type y if yes and n if not. ").lower()
 
     if ask_user_ready_or_not == "y":
-    
+        while True:
+            user_number = int(input("Your guess: "))
 
     else:
         print("Please restart the game.")
