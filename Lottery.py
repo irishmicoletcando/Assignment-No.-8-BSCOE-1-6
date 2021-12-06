@@ -48,3 +48,9 @@ def lottery_game():
             user_number_list.append(user_digit3) 
     except ValueError:
         print("Enter a number from 0 to 9 only.")
+
+    # Game Proper
+    if sorted(user_number_list) == sorted(computer_number_list):
+        print(f"Winner!\nRandom Computer Numbers: {computer_number_list}")
+    else:
+        print(f"You lose!\nRandom Computer Numbers: {computer_number_list}")
