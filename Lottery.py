@@ -19,3 +19,6 @@ def lottery_game():
     # first digit
     computer_digit1 = random.randint(0,9)
     computer_number_list.append(computer_digit1)
+    # second digit
+    computer_digit2 = random.randint(0,9)
+    computer_number_list.append(computer_digit2)
