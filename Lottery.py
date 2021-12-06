@@ -62,3 +62,7 @@ def try_again():
         lottery_game()
     else:
         sys.exit()
+
+
+lottery_game()
+try_again()
