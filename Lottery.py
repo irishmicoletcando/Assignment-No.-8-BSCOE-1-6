@@ -22,3 +22,6 @@ def lottery_game():
     # second digit
     computer_digit2 = random.randint(0,9)
     computer_number_list.append(computer_digit2)
+    # third digit
+    computer_digit3 = random.randint(0,9)
+    computer_number_list.append(computer_digit3)
