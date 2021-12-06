@@ -8,6 +8,7 @@
 # If “n” the program will exit.
 
 import random
+import sys
 
 def lottery_game():
     print("""Welcome to the Lottery Game!\n
@@ -54,3 +55,10 @@ def lottery_game():
         print(f"Winner!\nRandom Computer Numbers: {computer_number_list}")
     else:
         print(f"You lose!\nRandom Computer Numbers: {computer_number_list}")
+
+def try_again():
+    try_again = input("Try again? Type y if yes and n if no. ").lower()
+    if try_again == "y":
+        lottery_game()
+    else:
+        sys.exit()
