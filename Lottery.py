@@ -28,3 +28,9 @@ def lottery_game():
 
     # user numbers
     user_number_list = []
+    try:
+        user_digit1 = int(input("Enter your first digit: "))
+        if 0 <= user_digit1 <= 9:
+            user_number_list.append(user_digit1)
+    except ValueError:
+        print("Enter a number from 0 to 9 only.")
