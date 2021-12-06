@@ -14,3 +14,5 @@ def lottery_game():
             Instructions: The computer will generate 3 random numbers and the numbers that you will input must matched the computer generated numbers.\n
             The program will display "Winner!" if you input all 3 numbers correctly and "You lose!" if not.\n""")
 
+    # computer numbers
+    computer_number_list = []
