@@ -33,22 +33,30 @@ def lottery_game():
         user_digit1 = int(input("Enter your first digit: "))
         if 0 <= user_digit1 <= 9:
             user_number_list.append(user_digit1)
+        else:
+            print("Enter a number from 0-9 only.")
     except ValueError:
-        print("Enter a number from 0 to 9 only.")
+        print("Enter a number only.")
 
     try:
         user_digit2 = int(input("Enter your second digit: "))
         if 0 <= user_digit2 <= 9:
-            user_number_list.append(user_digit2)  
+            user_number_list.append(user_digit2) 
+        else:
+            print("Enter a number from 0-9 only.") 
     except ValueError:
-        print("Enter a number from 0 to 9 only.")
+        print("Enter a number only.")
 
     try:
         user_digit3 = int(input("Enter your third digit: "))
         if 0 <= user_digit3 <= 9:
             user_number_list.append(user_digit3) 
+        else:
+            print("Enter a number from 0-9 only.")
     except ValueError:
-        print("Enter a number from 0 to 9 only.")
+        print("Enter a number only.")
+
+    print(f"The numbers you inputted are: {user_number_list}")
 
     # Game Proper
     if sorted(user_number_list) == sorted(computer_number_list):
